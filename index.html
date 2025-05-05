@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac White - Premium Cosmetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Mac White - Premium Cosmetics_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUeCZaAEwKliLMeMyWa8wChxQ2RdC1cHzQfaQ+S6buDfAuL0O+Rd0Rw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        /* General Styling - WHITE THEME */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light off-white background */
+            color: #333333; /* Dark grey text color */
+             /* Add padding to the bottom to prevent the fixed button from covering content */
+            padding-bottom: 80px; /* Adjust as needed based on cart button size */
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px; /* Max width for larger screens */
+            margin: 30px auto; /* Adjusted margin */
+            padding: 30px; /* Increased padding */
+            background-color: #ffffff; /* White container background */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+            text-align: center; /* Center content within container */
+        }
+
+        /* Stylish Headings (Dark Text on Light Background) */
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #333333; /* Dark grey for headings */
+            font-weight: 700;
+            margin-bottom: 0.8em;
+            text-align: left; /* Align headings left within sections */
+        }
+
+        h2 {
+             /* Keep pink underline accent */
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            display: inline-block;
+            color: #111; /* Slightly darker for H2 */
+            text-align: left; /* Ensure underline aligns left */
+        }
+
+        /* Style for the pink heading */
+        .pink-heading {
+             color: #ff69b4; /* Pink color */
+             text-align: center; /* Center the heading */
+        }
+
+
+        h3 {
+             color: #555555; /* Medium grey for H3 */
+             font-weight: 700; /* Bolder H3 */
+             text-align: left; /* Align headings left within sections */
+        }
+
+        p {
+            line-height: 1.7;
+            color: #555555; /* Medium grey for paragraphs */
+            font-weight: 400;
+            text-align: left; /* Align paragraphs left within sections */
+        }
+
+        a {
+            color: #d81b60; /* Darker pink for links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff69b4; /* Lighter pink on hover */
+        }
+
+        /* Navigation - Light Theme */
+        .navbar {
+            background-color: #ffffff; /* White navbar */
+            padding: 12px 0;
+            text-align: center;
+            margin-bottom: 0; /* Remove bottom margin */
+            border-bottom: 1px solid #eeeeee; /* Light border */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow under navbar */
+            position: sticky; /* Make navbar sticky */
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 50px; /* Large horizontal margin for desktop */
+        }
+
+        .navbar a {
+            font-family: 'Montserrat', sans-serif;
+            color: #555555; /* Medium grey nav links */
+            font-weight: 700;
+            font-size: 1.05em; /* Slightly smaller nav font */
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+
+        /* Active/Hover Nav Link Style */
+        .navbar a:hover, .navbar a.active {
+            color: #d81b60; /* Dark pink active/hover text */
+            background-color: #fce4ec; /* Very light pink background */
+        }
+
+
+        /* Brand Name Specific Styling - White Theme */
+        .brand-name {
+            font-family: 'Playfair Display', serif; /* Changed font to Playfair Display */
+            font-size: 2.8em; /* Adjusted size */
+            font-weight: 700; /* Playfair Display looks good bold */
+            text-align: center;
+            margin-bottom: 25px; /* Adjusted margin to make space for subtitle */
+            margin-top: 10px; /* Restore top margin since logo is removed */
+            color: #ff69b4; /* Accent Pink for brand name */
+        }
+
+        /* Removed Styling for the Brand Logo Image */
+        /*
+         .brand-name .brand-logo { ... }
+        */
+
+
+        /* Styling for the small black text under the brand name */
+         .brand-subtitle {
+             display: block; /* Ensure it's on a new line */
+             font-size: 14px; /* Slightly medium font size */
+             color: #000000; /* Make the text black */
+             font-weight: 400; /* Ensure it's not bold */
+             margin-top: 3px; /* Small space above */
+             /* text-align: center; */ /* Parent .brand-name is already centered */
+         }
+
+        /* Logo Container and Image Styling */
+        .logo-container {
+            text-align: center; /* Center the image horizontally */
+            margin-bottom: 30px; /* Add space below the logo */
+        }
+
+        .website-logo {
+            max-width: 200px; /* Set a max width for the logo (adjust as needed) */
+            height: auto; /* Maintain aspect ratio */
+            display: inline-block; /* Ensure margin auto works for centering if parent is block */
+        }
+
+
+        /* Page Section Styling */
+        .page-section {
+            display: none;
+            animation: fadeIn 0.6s ease-in-out; /* Slightly longer fade */
+            padding-top: 20px;
+            text-align: left; /* Align headings left within sections */
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* === Mobile Specific Styling === */
+        @media (max-width: 767px) { /* Apply only on screens smaller than 768px */
+            .page-section {
+                margin-bottom: 40px; /* Add space below each section */
+            }
+
+             /* Add a bit more margin below the last section in the container on mobile */
+             .container .page-section:last-child.active {
+                 margin-bottom: 20px; /* Adjust as needed */
+             }
+
+            /* --- Mobile Navbar Styling --- */
+            .navbar ul {
+                /* Removed flex properties for vertical stacking */
+                /* display: flex; */
+                /* flex-direction: column; */
+                /* align-items: center; */
+                padding: 8px 0; /* Keep some vertical padding */
+                text-align: center; /* Center the inline list items */
+            }
+
+            .navbar li {
+                display: inline-block; /* Display items inline but allow margin/padding */
+                margin: 0 15px; /* Horizontal margin for spacing, remove vertical */
+                /* Removed width: 100%; */
+                /* Removed text-align: center; (handled by ul) */
+            }
+
+            .navbar a {
+                padding: 5px 10px; /* Keep padding */
+                 /* Removed display: block; */
+                 font-size: 1em; /* Keep slightly smaller font size */
+            }
+
+            /* Stack featured product category slots vertically on small screens */
+             .featured-slots-container {
+                 flex-direction: column;
+             }
+
+             .product-category-slot {
+                 width: 70%; /* Make slots smaller on mobile */
+                 margin: 0 auto; /* Center the slots */
+             }
+            /* ---------------------------- */
+        }
+        /* ====================================== */
+
+
+        /* Home Page Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px; /* Increased gap */
+            margin-top: 30px;
+            margin-bottom: 30px; /* Add margin below the grid */
+        }
+
+        .product-item {
+            background-color: #ffffff; /* White product background */
+            border: 1px solid #eeeeee; /* Light grey border */
+             /* Adjusted padding top to give image space if present */
+            padding: 15px 15px 25px 15px;
+            text-align: center; /* Center content inside product item */
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+            border-color: #ff85c1; /* Pink border on hover */
+        }
+
+        /* Add green border on hover for Mac Herb product items */
+        .product-item.mac-herb-product:hover {
+            border-color: #25D366; /* WhatsApp Green border on hover for Mac Herb products */
+        }
+
+
+        /* === CSS for Product Images === */
+         .product-item img {
+             max-width: 100%; /* Ensure image doesn't overflow container */
+             /* Removed fixed height */
+             /* height: 180px; */
+             object-fit: contain; /* Changed to contain to prevent cropping */
+             border-radius: 6px; /* Slightly rounded corners for image */
+             /* margin-bottom handled by the text below it */
+             border: 1px solid #f0f0f0; /* Very light border around image */
+         }
+         /* ============================= */
+
+        /* Styling for the product size/price text */
+         .product-item .product-details {
+             font-size: 1em;
+             color: #555;
+             margin-top: 10px; /* Space below the image */
+             margin-bottom: 10px; /* Space above the heading */
+             text-align: center; /* Center the text */
+             font-weight: 700; /* Make it bold */
+         }
+
+
+        .product-item h3 {
+            margin-top: 0; /* Reset top margin */
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            color: #333;
+            font-weight: 700;
+             text-align: center; /* Center heading in product item */
+        }
+
+        .product-item p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 20px;
+            flex-grow: 1; /* Allow paragraph to push button down */
+            text-align: center; /* Center paragraph in product item */
+        }
+
+        /* Styling for Product Actions (Add to Cart Checkbox and Order Now Button) */
+        .product-actions {
+             display: flex; /* Use flexbox to align items */
+             justify-content: center; /* Center items horizontally */
+             align-items: center; /* Align items vertically */
+             gap: 15px; /* Space between items */
+             margin-bottom: 15px; /* Space below the action row */
+             flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+
+        .product-actions .add-to-cart-label {
+             font-size: 0.9em;
+             cursor: pointer;
+             display: flex; /* Align checkbox and text */
+             align-items: center;
+             gap: 5px;
+             color: #555;
+              /* Initially hidden, controlled by JS */
+             /* display: none; */ /* Restore default display for JS control */
+        }
+
+        .product-actions .add-to-cart-checkbox {
+            cursor: pointer;
+            width: 16px; /* Adjust size if needed */
+            height: 16px; /* Adjust size if needed */
+             accent-color: #ff69b4; /* Highlight color */
+        }
+
+        /* Style the tick box accent color to green for checked Mac Herb products */
+        .mac-herb-product .add-to-cart-checkbox:checked {
+            accent-color: #25D366; /* WhatsApp Green */
+        }
+
+        /* Style for the Featured Products heading */
+        .featured-heading {
+            color: #FF0000; /* Red */
+            margin-top: 40px; /* Add space above */
+            border-bottom: 2px solid black; /* Black underline */
+            padding-bottom: 5px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        /* Container for featured product category slots to enable side-by-side layout */
+        .featured-slots-container {
+            display: flex; /* Arrange children in a row */
+            gap: 30px; /* Space between the slots */
+            margin-top: 20px; /* Space below the heading/paragraph */
+            flex-wrap: wrap; /* Allow slots to wrap on smaller screens */
+             justify-content: center; /* Center the slots when they wrap */
+        }
+
+        /* Styling for the product category slots in the Featured section */
+        .product-category-slot {
+            background-color: #ffffff; /* White background */
+            border: 1px solid #ff85c1; /* Stable light pink border for Mac White */
+            padding: 20px;
+            margin-bottom: 0; /* Remove bottom margin when in flex container */
+            border-radius: 8px;
+            text-align: center; /* Center content */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+             flex: 1; /* Allow slots to grow and shrink and take equal space */
+             min-width: 280px; /* Minimum width before wrapping */
+             max-width: 450px; /* Maximum width to prevent them from becoming too wide */
+             transition: border-color 0.3s ease; /* Add transition for smooth hover effect */
+        }
+
+        /* Stable green border for featured Mac Herb products slot */
+        .product-category-slot.mac-herb-product {
+            border-color: #25D366; /* Stable Green border for featured Mac Herb products slot */
+        }
+
+
+        /* Styling for images within the product category slots */
+        .product-category-slot img {
+            max-width: 75%; /* Make the image a medium size relative to its container */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .product-category-slot h3 {
+             text-align: center; /* Center title */
+             margin-top: 0;
+             margin-bottom: 10px;
+             color: #333;
+        }
+
+        .product-category-slot p {
+             text-align: center; /* Center description text */
+             line-height: 1.6;
+             color: #555;
+        }
+
+        /* Styling for bullet points within product category slots */
+        .product-category-slot ul {
+            list-style: disc; /* Use standard disc bullet points */
+            text-align: left; /* Align bullet points to the left */
+            padding-left: 20px; /* Add some left padding for the bullet points */
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #555; /* Inherit text color */
+        }
+
+        .product-category-slot li {
+            margin-bottom: 5px; /* Add some space between list items */
+            line-height: 1.5;
+        }
+
+
+        /* Button Style - White Theme */
+        .btn {
+            display: inline-block;
+            background-color: #ff69b4; /* Pink button background */
+            color: #ffffff; /* White button text */
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            align-self: center; /* Center button */
+            margin-top: auto; /* Push button to bottom if flex space allows */
+             text-align: center; /* Ensure text is centered in button */
+             white-space: nowrap; /* Prevent button text from wrapping */
+        }
+
+        .btn:hover {
+            background-color: #d81b60; /* Darker pink on hover */
+            transform: scale(1.05);
+            color: #ffffff;
+        }
+
+        /* Specific Button Styles */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            color: white;
+        }
+
+        /* Style for Mac Herb product buttons */
+        .mac-herb-product .btn {
+             background-color: #25D366; /* WhatsApp Green */
+             color: white; /* White text for contrast */
+        }
+
+        .mac-herb-product .btn:hover {
+             background-color: #128C7E; /* Darker Green on hover */
+        }
+
+
+        /* New Full Set Promo Section (Adjusted layout without image) */
+        .full-set-promo {
+             /* Removed flexbox properties */
+             /* display: flex; */
+             /* flex-direction: column; */
+             /* align-items: center; */
+             /* gap: 30px; */
+            margin-top: 40px; /* Space above this section */
+            text-align: center; /* Center content within this block */
+             margin-bottom: 30px; /* Space below this section */
+        }
+
+         /* Removed .full-set-promo .promo-image style */
+         /* Removed responsive styles for the image and promo section layout */
+
+
+         .full-set-promo .promo-content {
+             /* Removed flexbox properties */
+             /* display: flex; */
+             /* flex-direction: column; */
+             /* align-items: center; */
+              display: inline-block; /* Make it inline-block to center the block itself */
+             text-align: center; /* Center text within this block */
+         }
+
+         /* Removed .full-set-promo .promo-text style */
+         /* Removed .full-set-promo .promo-text style */
+         .full-set-promo p.promo-text { /* Re-target the text specifically */
+             font-size: 1.1em;
+             color: #555;
+             font-weight: 700; /* Make text bold */
+              text-align: center; /* Ensure text is centered */
+         }
+
+
+        /* Responsive adjustments for the promo section */
+        @media (min-width: 768px) { /* For tablets and desktops */
+            .full-set-promo {
+                /* Removed flexbox properties */
+                /* flex-direction: row; */
+                /* align-items: center; */
+                /* justify-content: center; */
+            }
+
+             /* Removed promo image/content responsive styles */
+            /*
+             .full-set-promo .promo-image { ... }
+             .full-set-promo .promo-content { ... }
+              .full-set-promo .promo-text { ... }
+            */
+        }
+
+
+        /* About Page Specifics */
+        /* Removed certificate image styling */
+        .certificates p {
+             text-align: left; /* Align text left */
+        }
+
+        .social-links {
+            text-align: center; /* Center the social links block */
+        }
+
+        /* Styling for Social Media Links as Buttons */
+        .social-links a {
+            display: inline-block; /* Make them block-like for padding */
+            margin: 0 8px 8px 8px; /* Add space around buttons */
+            padding: 10px 15px; /* Add padding */
+            color: white; /* White text color */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            font-weight: 700; /* Bold text */
+            transition: opacity 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .social-links a:hover {
+            opacity: 0.9; /* Slightly transparent on hover */
+            color: white; /* Keep text white on hover */
+        }
+
+        /* Specific colors for social media buttons */
+        .social-links a.facebook { background-color: #1877F2; } /* Facebook Blue */
+        .social-links a.instagram { background-color: #E1306C; } /* Instagram Pink */
+        .social-links a.tiktok { background-color: #000000; } /* TikTok Black */
+        .social-links a.youtube { background-color: #FF0000; } /* YouTube Red */
+        .social-links a.whatsapp { background-color: #25D366; } /* WhatsApp Green */
+
+
+        /* Section separation */
+         section > section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eeeeee; /* Lighter separator */
+        }
+
+        /* Style for the new Mac Herb heading */
+        .mac-herb-heading {
+            color: #228B22; /* Forest Green */
+            margin-top: 40px; /* Add space above the new section */
+            border-bottom: 2px solid black; /* Black underline */
+            padding-bottom: 5px;
+            display: inline-block;
+            text-align: left;
+        }
+
+
+        /* === Fixed Add to Cart Button (Bottom Right) - Stylish Version === */
+        #cart-button {
+            position: fixed; /* Keep position fixed */
+            bottom: 25px; /* Adjusted distance from bottom */
+            right: 25px; /* Adjusted distance from right */
+            z-index: 1000; /* Ensure it's above other content */
+            background-color: #ff4081; /* Vibrant Accent Pink (Initial) */
+            color: white; /* White text/icon */
+            padding: 12px 25px; /* Reduced padding for smaller size */
+            border-radius: 30px; /* Slightly less rounded */
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Adjusted shadow */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.1em; /* Slightly smaller font size */
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Adjusted gap */
+            min-width: 150px; /* Adjusted min-width */
+            justify-content: center; /* Center content inside button */
+            border: none; /* Remove border */
+        }
+
+        /* Style for the button when in 'selecting' (checkout) mode */
+        #cart-button.selecting {
+             background-color: #d81b60; /* Darker Pink for Checkout State */
+             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly more pronounced shadow in this state */
+        }
+
+
+        #cart-button:hover {
+            background-color: #e02c70; /* Darker pink on hover */
+            transform: translateY(-2px); /* Lift slightly on hover */
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); /* Enhance shadow on hover */
+            color: #ffffff;
+        }
+
+        #cart-button:active {
+             transform: translateY(0); /* Press down on click */
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Reduce shadow on active */
+             background-color: #c2185b; /* Even darker pink on active */
+        }
+
+
+        /* Styling for images within the cart button */
+        #cart-button img {
+            width: 20px; /* Adjusted size for both images */
+            height: auto; /* Maintain aspect ratio */
+            filter: invert(100%); /* Make the black image white to match text color */
+             vertical-align: middle;
+        }
+
+
+        #cart-count {
+            background-color: #ffffff; /* White background */
+            color: #ff4081; /* Match button accent color */
+            border-radius: 50%;
+            padding: 3px 7px; /* Adjusted padding */
+            font-size: 0.8em; /* Adjusted count font size */
+            font-weight: 700;
+            position: absolute;
+            top: -8px; /* Position higher */
+            right: -8px; /* Position further right */
+            border: 2px solid #ff4081; /* Match button accent color border */
+            min-width: 20px; /* Ensure it's a round circle */
+            text-align: center;
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles for the two states of the button text/image */
+        #cart-button .cart-initial {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Match button gap */
+        }
+
+        #cart-button.selecting .cart-initial {
+            display: none; /* Hide when in selecting mode */
+        }
+
+        #cart-button .cart-checkout {
+             display: none; /* Initially hidden */
+             align-items: center;
+             gap: 10px; /* Match button gap */
+        }
+
+        #cart-button.selecting .cart-checkout {
+            display: flex; /* Show when in selecting mode */
+        }
+
+        /* Ensure the Font Awesome icons are hidden if replaced by images */
+         #cart-button .cart-initial i,
+         #cart-button .cart-checkout i {
+             display: none;
+         }
+        /* ================================= */
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#home" data-target="home" class="nav-link active">Home</a></li>
+            <li><a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#about" data-target="about" class="nav-link">About Us</a></li>
+            <li><a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#contact" data-target="contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="brand-name">
+            <div class="logo-container">
+                <img src="logo.png" alt="Mac White Logo" class="website-logo">
+            </div>
+            Mac White
+            <span class="brand-subtitle">From Mecca Cosmetics</span>
+        </div>
+
+
+        <section id="home" class="page-section active">
+            <h2 class="pink-heading">Mac White Products</h2>
+            <p>Discover beauty with our high-quality cosmetic range, designed for radiant results.</p>
+
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="facecream.png" alt="Mac White Face Cream">
+                    <p class="product-details">30g : 2500/-</p>
+                    <h3>Face Cream</h3>
+                    <p>Nourish and revitalize your skin with our signature face cream, crafted for a radiant complexion.</p>
+                    <div class="product-actions">
+                         <label class="add-to-cart-label" style="display: none;">
+                             <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Face Cream" data-product-price="2500/-"> Add
+                         </label>
+                         <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Face Cream" data-product-price="2500/-">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="body.png" alt="Mac White Body Lotion">
+                    <p class="product-details">200ml : 3000/-</p>
+                    <h3>Body Lotion</h3>
+                    <p>Hydrate and soften your skin from head to toe with our luxurious, fast-absorbing body lotion.</p>
+                    <div class="product-actions">
+                         <label class="add-to-cart-label" style="display: none;">
+                             <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Body Lotion" data-product-price="3000/-"> Add
+                         </label>
+                         <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Body Lotion" data-product-price="3000/-">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                     <img src="faceserum.png" alt="Mac White Face Serum">
+                    <p class="product-details">30ml : 2000/-</p>
+                    <h3>Face Serum</h3>
+                    <p>A concentrated, potent formula designed for a radiant, youthful glow and improved skin texture.</p>
+                    <div class="product-actions">
+                         <label class="add-to-cart-label" style="display: none;">
+                             <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Face Serum" data-product-price="2000/-"> Add
+                         </label>
+                         <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Face Serum" data-product-price="2000/-">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="whitening.png">
+                    <p class="product-details">100g : 1300/-</p>
+                    <h3>Whitening Soap</h3>
+                    <p>Infused with natural plant extracts, herbal soap offers gentle, soothing cleansing with added therapeutic benefits for the skin.</p>
+                    <div class="product-actions">
+                         <label class="add-to-cart-label" style="display: none;">
+                             <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Whitening Soap" data-product-price="1300/-"> Add
+                         </label>
+                         <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Whitening Soap" data-product-price="1300/-">ORDER NOW</a>
+                    </div>
+                </div>
+            </div> <h2 class="mac-herb-heading">Mac Herb Products</h2>
+             <p>Explore our herbal range, crafted with natural ingredients.</p> <div class="product-grid"> <div class="product-item mac-herb-product">
+                     <img src="herb.png" alt="Herbal Soap">
+                    <p class="product-details">100g : 1300/-</p>
+                    <h3>Herbal Soap</h3>
+                    <p>Herbal Soap offers gentle, natural cleansing that soothes and nurtures your skin.</p>
+                    <div class="product-actions">
+                         <label class="add-to-cart-label" style="display: none;">
+                             <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Herbal Soap" data-product-price="1300/-"> Add
+                         </label>
+                         <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Herbal Soap" data-product-price="1300/-">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="product-item mac-herb-product">
+                    <img src="scrub.png" alt="Scrub Soap">
+                    <p class="product-details">100g : 1300/-</p> <h3>Scrub Soap</h3>
+                    <p>Scrub soap exfoliates and deep cleanses to reveal smoother, clearer skin with improved texture.</p> <div class="product-actions">
+                         <label class="add-to-cart-label" style="display: none;">
+                             <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Mac Herb Scrub Soap" data-product-price="1300/-"> Add
+                         </label>
+                         <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Mac Herb Scrub Soap" data-product-price="1300/-">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="product-item mac-herb-product">
+                    <img src="oil.png" alt="Mac White Hair Oil">
+                    <p class="product-details">100ml : 1300/-</p>
+                    <h3>Hair Oil</h3>
+                    <p>Nourish and strengthen your hair with our premium hair oil, designed for shine and health.</p>
+                    <div class="product-actions">
+                         <label class="add-to-cart-label" style="display: none;">
+                             <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Hair Oil" data-product-price="1300/-"> Add
+                         </label>
+                         <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Hair Oil" data-product-price="1300/-">ORDER NOW</a>
+                    </div>
+                </div>
+                 <div class="product-item mac-herb-product">
+                     <img src="serum.png" alt="Mac White Hair Serum">
+                     <p class="product-details">30ml : 2500/-</p>
+                     <h3>Hair Serum</h3>
+                     <p>Give your hair a smooth, shiny finish and combat frizz with our potent hair serum.</p>
+                     <div class="product-actions">
+                          <label class="add-to-cart-label" style="display: none;">
+                              <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Hair Serum" data-product-price="2500/-"> Add
+                          </label>
+                          <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Hair Serum" data-product-price="2500/-">ORDER NOW</a>
+                     </div>
+                 </div>
+                 <div class="product-item mac-herb-product">
+                     <img src="gel.png" alt="Mac White Face Gel">
+                     <p class="product-details">50ml : 2500/-</p>
+                     <h3>Face Gel</h3>
+                     <p>Refresh and hydrate your skin with our lightweight face gel, perfect for a non-greasy feel.</p>
+                     <div class="product-actions">
+                          <label class="add-to-cart-label" style="display: none;">
+                              <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Face Gel" data-product-price="2500/-"> Add
+                          </label>
+                          <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Face Gel" data-product-price="2500/-">ORDER NOW</a>
+                     </div>
+                 </div>
+                 <div class="product-item mac-herb-product">
+                     <img src="pack.png" alt="Mac White Face Pack">
+                     <p class="product-details">100g : 1500/-</p>
+                     <h3>Face Pack</h3>
+                     <p>Invigorate your complexion with our purifying face pack for a refreshed and radiant look.</p>
+                     <div class="product-actions">
+                          <label class="add-to-cart-label" style="display: none;">
+                              <input type="checkbox" class="add-to-cart-checkbox" data-product-name="Face Pack" data-product-price="1500/-"> Add
+                          </label>
+                          <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" class="btn order-now-btn" data-product-name="Face Pack" data-product-price="1500/-">ORDER NOW</a>
+                     </div>
+                 </div>
+            </div>
+            <h2 class="featured-heading">Featured Products</h2>
+            <p>Check out some of our most popular and highly-rated products!</p>
+            <div class="featured-slots-container"> <div class="product-category-slot">
+                    <img src="macwhite.png" alt="Mac White Products Image">
+                    <h3 style="color: #ff69b4;">Mac White Products</h3>
+                    <ul>
+                        <li>Face Cream</li>
+                        <li>Body Lotion</li>
+                        <li>Face Serum</li>
+                        <li>Whitening Soap</li>
+                        <li>Vitamin C Serum</li>
+                    </ul>
+                </div>
+                <div class="product-category-slot mac-herb-product">
+                    <img src="macherb.png" alt="Mac Herb Products Image">
+                    <h3 style="color: #228B22;">Mac Herb Products</h3>
+                    <ul>
+                        <li>Hair Oil</li>
+                        <li>Hair Serum</li>
+                        <li>Herbal Soap</li>
+                        <li>Scrub Soap</li>
+                        <li>Face Pack</li>
+                        <li>Face Gel</li>
+                    </ul>
+                </div>
+            </div> <div class="full-set-promo">
+                <div class="promo-content">
+                    <p class="promo-text">GET AN ADVANCED WHITENING RANGE</p>
+                     </div>
+            </div>
+
+        </section>
+
+        <section id="about" class="page-section">
+            <h2>About Us</h2>
+            <section>
+                <h3>Our Passion for Cosmetics</h3>
+                <p>Welcome to Mac White, where beauty meets quality. We specialize in creating premium cosmetic products designed to enhance your natural radiance. Our formulations are crafted with care, using high-quality ingredients to deliver visible results.</p>
+            </section>
+            <section>
+                <h3>High-Quality Manufacturing</h3>
+                <p>We pride pride ourselves on our meticulous manufacturing process. Every Mac White product is produced in state-of-the-art facilities that adhere to the strictest quality control standards. From sourcing raw materials to final packaging, excellence is our benchmark.</p>
+            </section>
+            <section>
+                <h3>Professional & Certificated</h3>
+                <p>Mac White is a professional manufacturer committed to safety and efficacy. Our processes are backed by industry certifications, ensuring that you receive products that are not only effective but also trustworthy and safe for your skin. We believe in transparency and quality you can rely on.</p>
+                <div class="certificates">
+                    <p>(Certification details or logos can be placed here)</p>
+                </div>
+            </section>
+            <section>
+                <h3>Follow Us</h3>
+                 <div class="social-links">
+                    <p>Connect with us on social media:</p>
+                    <a href="https://www.facebook.com/share/1BYzo7wU2Z/" target="_blank" class="social-link facebook">Facebook</a>
+                    <a href="https://www.instagram.com/mac_white__?igsh=MXd3aXNsM3JoNzZ5" target="_blank" class="social-link instagram">Instagram</a>
+                    <a href="https://www.tiktok.com/@mac_white_?_t=ZS-8veji2EkceQ&_r=1" target="_blank" class="social-link tiktok">TikTok</a>
+                    <a href="https://youtube.com/@macwhiteskincareproducts?si=Y8yRCwrCmoEIszL9" target="_blank" class="social-link youtube">YouTube</a>
+                     </div>
+            </section>
+        </section>
+
+        <section id="contact" class="page-section">
+            <h2>Get In Touch</h2>
+            <section>
+                <h3>Purchase Online</h3>
+                <p>Browse and purchase your favorite Mac White products directly from our online store. Click the link below to start shopping!</p>
+                <a href="file:///C:/Users/LENOVO/OneDrive/%E6%96%84%E4%BB%B6/New%20folder/index.html#" target="_blank" class="btn">Visit Online Store</a>
+            </section>
+            <section>
+                <h3>Contact Us via WhatsApp</h3>
+                <p>Have questions about our products or need assistance? Send us a message directly on WhatsApp for a quick response!</p>
+                <a href="https://wa.me/94727351513" target="_blank" class="btn whatsapp-btn">Chat on WhatsApp (072 735 1513)</a>
+            </section>
+            <section>
+                 <p>For partnerships, wholesale inquiries, or other questions, please reach out via WhatsApp or stay tuned for more contact options.</p>
+            </section>
+        </section>
+
+    </div>
+
+    <div id="cart-button">
+        <span class="cart-initial">
+            <img src="Fa-Team-Fontawesome-FontAwesome-Cart-Plus.1024.png" alt="Add to Cart Icon"> Add to Cart
+        </span>
+        <span class="cart-checkout">
+             Checkout <span id="cart-count">0</span> <img src="FontAwesome-Arrow-Right-Long-icon.png" alt="Checkout Arrow">
+        </span>
+    </div>
+
+
+    <script>
+        // JavaScript for section switching (kept as is)
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.navbar .nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+            const navbar = document.querySelector('.navbar');
+            const container = document.querySelector('.container');
+            const navbarHeight = navbar ? navbar.offsetHeight : 70;
+
+            function showSection(targetId) {
+                pageSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.dataset.target === targetId);
+                });
+
+                if(container) {
+                    const elementTop = targetSection ? targetSection.getBoundingClientRect().top + window.pageYOffset : container.offsetTop;
+                    const offsetPosition = elementTop - navbarHeight - 20;
+
+                    if (!document.startViewTransition) {
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                }
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = link.dataset.target;
+
+                    if (document.startViewTransition) {
+                        document.startViewTransition(() => showSection(targetId));
+                    } else {
+                        showSection(targetId);
+                    }
+                });
+            });
+
+            let initialTargetId = 'home';
+            if (window.location.hash) {
+                const hashId = window.location.hash.substring(1);
+                if (document.getElementById(hashId)) {
+                    initialTargetId = hashId;
+                }
+            }
+             setTimeout(() => {
+                 showSection(initialTargetId);
+                 const targetSection = document.getElementById(initialTargetId);
+                 const containerTop = container ? container.offsetTop : 0;
+                 const elementTop = targetSection ? targetSection.getBoundingClientRect().top + window.pageYOffset : containerTop;
+                 const offsetPosition = elementTop - navbarHeight - 20;
+                 if(initialTargetId !== 'home' || window.pageYOffset > 50) {
+                   window.scrollTo({ top: offsetPosition, behavior: 'auto' });
+                 }
+
+             }, 0);
+
+        });
+
+        // === JavaScript for Add to Cart (Selection Mode) and WhatsApp ===
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartButton = document.getElementById('cart-button');
+            const cartCount = document.getElementById('cart-count');
+            const addToCartLabels = document.querySelectorAll('.add-to-cart-label'); // Labels contain checkboxes
+            const addToCartCheckboxes = document.querySelectorAll('.add-to-cart-checkbox');
+            const whatsappNumber = '94727351513'; // Your WhatsApp number
+
+            let isSelecting = false; // State variable for selection mode
+
+            // Initial state: hide checkboxes
+            addToCartLabels.forEach(label => {
+                label.style.display = 'none';
+            });
+
+            // Update cart count when checkboxes are clicked (only in selection mode)
+            addToCartCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    if (isSelecting) {
+                        let count = 0;
+                        addToCartCheckboxes.forEach(cb => {
+                            if (cb.checked) {
+                                count++;
+                            }
+                        });
+                        cartCount.textContent = count;
+                    }
+                });
+            });
+
+            // Handle cart button click
+            cartButton.addEventListener('click', () => {
+                if (!isSelecting) {
+                    // Enter selection mode
+                    isSelecting = true;
+                    cartButton.classList.add('selecting'); // Add class to change button appearance
+
+                    // Show checkboxes
+                    addToCartLabels.forEach(label => {
+                        // Use block or flex to make label visible and clickable
+                        label.style.display = 'flex';
+                    });
+
+
+                } else {
+                    // Exit selection mode and process checkout
+                    const selectedItems = [];
+                    addToCartCheckboxes.forEach(checkbox => {
+                        if (checkbox.checked) {
+                            const productName = checkbox.dataset.productName;
+                            const productPrice = checkbox.dataset.productPrice; // Get price
+                            selectedItems.push({ name: productName, price: productPrice }); // Store name and price
+                        }
+                    });
+
+                    if (selectedItems.length === 0) {
+                        alert("Please select some products before checking out.");
+                        // Exit selection mode even if no items are selected
+                         isSelecting = false;
+                         cartButton.classList.remove('selecting');
+                         addToCartLabels.forEach(label => {
+                             label.style.display = 'none'; // Hide checkboxes again
+                         });
+                         addToCartCheckboxes.forEach(checkbox => {
+                            checkbox.checked = false; // Uncheck all boxes
+                         });
+                         cartCount.textContent = 0; // Reset count
+                        return; // Stop here if no items selected
+                    }
+
+                    // Generate WhatsApp message with name and price
+                    let message = "Hello! I'd like to order the following items:\n\n";
+                    selectedItems.forEach(item => {
+                        message += `- ${item.name} (${item.price})\n`; // Include name and price
+                    });
+                    message += "\nThank you!";
+
+                    // Construct WhatsApp API URL
+                    const encodedMessage = encodeURIComponent(message);
+                    const whatsappUrl = `https://wa.me/${whatsappNumber}/?text=${encodedMessage}`;
+
+                    // Open WhatsApp
+                    window.open(whatsappUrl, '_blank');
+
+                    // Reset state after sending
+                    isSelecting = false;
+                    cartButton.classList.remove('selecting'); // Remove class to revert appearance
+                    addToCartLabels.forEach(label => {
+                        label.style.display = 'none'; // Hide checkboxes again
+                    });
+                    addToCartCheckboxes.forEach(checkbox => {
+                        checkbox.checked = false; // Uncheck all boxes
+                    });
+                    cartCount.textContent = 0; // Reset count
+
+                }
+            });
+        });
+        // ===========================================
+
+        // === JavaScript for Order Now WhatsApp Pre-fill ===
+        document.addEventListener('DOMContentLoaded', () => {
+            const orderNowButtons = document.querySelectorAll('.order-now-btn');
+            const whatsappNumber = '94727351513'; // Your WhatsApp number
+
+            orderNowButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent the default link behavior
+
+                    const productName = button.dataset.productName;
+                    const productPrice = button.dataset.productPrice; // Get price
+
+                    let message = `Hello! I'd like to order the ${productName} (${productPrice}).`; // Message for single product with price
+
+                    const encodedMessage = encodeURIComponent(message);
+                    const whatsappUrl = `https://wa.me/${whatsappNumber}/?text=${encodedMessage}`;
+
+                    // Open WhatsApp
+                    window.open(whatsappUrl, '_blank');
+                });
+            });
+        });
+        // ===========================================
+
+    </script>
+
+
+</body></html>
